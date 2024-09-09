@@ -2,9 +2,9 @@
 
 namespace ChrisReedIO\SecureMeilisearch\Tests;
 
+use ChrisReedIO\SecureMeilisearch\SecureMeilisearchServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use ChrisReedIO\SecureMeilisearch\SecureMeilisearchServiceProvider;
 
 class TestCase extends Orchestra
 {

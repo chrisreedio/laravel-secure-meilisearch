@@ -2,9 +2,9 @@
 
 namespace ChrisReedIO\SecureMeilisearch;
 
+use ChrisReedIO\SecureMeilisearch\Commands\SecureMeilisearchCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use ChrisReedIO\SecureMeilisearch\Commands\SecureMeilisearchCommand;
 
 class SecureMeilisearchServiceProvider extends PackageServiceProvider
 {
