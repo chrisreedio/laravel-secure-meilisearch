@@ -2,10 +2,10 @@
 
 // config for ChrisReedIO/SecureMeilisearch
 return [
-    'commands' => [
-        'register' => false,
-    ],
-
+    /**
+     * Whether to register the Scout Indexing commands for use via web.
+     */
+    'register_commands' => false,
 
     'key' => [
         /**

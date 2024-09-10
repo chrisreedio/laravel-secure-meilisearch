@@ -46,11 +46,18 @@ echo $secureMeilisearch->echoPhrase('Hello, ChrisReedIO!');
 
 ### User Model Trait
 
-To any 'user' model that you want to be able to generate secure search tokens for, you can add the `HasSearchKeys` trait.
+To any 'user' model that you want to be able to generate secure search tokens for, you can add the `HasSearchKeys` trait. Also ensure that your user model implements the `SearchUser` interface.
 
 ```php
 
 ```
+
+Also ensure that you sync your search index settings with the following command:
+
+```bash
+php artisan scout:sync-index-settings
+```
+
 
 ## Testing
 
