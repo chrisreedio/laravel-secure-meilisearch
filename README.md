@@ -9,6 +9,8 @@ This is where your description should go. Limit it to a paragraph or two. Consid
 
 ## Installation
 
+It is expected that you have a working Laravel installation with Laravel Scout and Meilisearch integration working.
+
 You can install the package via composer:
 
 ```bash
@@ -35,17 +37,19 @@ return [
 ];
 ```
 
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="laravel-secure-meilisearch-views"
-```
-
 ## Usage
 
 ```php
 $secureMeilisearch = new ChrisReedIO\SecureMeilisearch();
 echo $secureMeilisearch->echoPhrase('Hello, ChrisReedIO!');
+```
+
+### User Model Trait
+
+To any 'user' model that you want to be able to generate secure search tokens for, you can add the `HasSearchKeys` trait.
+
+```php
+
 ```
 
 ## Testing

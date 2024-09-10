@@ -18,8 +18,8 @@ class SecureMeilisearchServiceProvider extends PackageServiceProvider
         $package
             ->name('laravel-secure-meilisearch')
             ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel_secure_meilisearch_table')
+            // ->hasViews()
+            ->hasMigration('create_search_keys_table')
             ->hasCommand(SecureMeilisearchCommand::class);
     }
 }
