@@ -10,7 +10,6 @@ trait SearchFlush
      * Flush the search index for the model.
      * ! Warning: This requires the scout:flush and scout:import commands to be available.
      * ! Warning: This will remove all records from the search index and re-import them. This can be slow for large datasets.
-     * @return void
      */
     public static function flushSearchIndex(): void
     {

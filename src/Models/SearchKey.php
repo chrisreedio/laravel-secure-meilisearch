@@ -22,7 +22,6 @@ use function now;
 /**
  * Class SearchKey
  *
- * @package ChrisReedIO\SecureMeilisearch\Models
  * @property int $id
  * @property int $user_id
  * @property string $uuid
@@ -33,9 +32,9 @@ use function now;
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @property-read \App\Models\User $user
+ *
  * @method static Builder|SearchKey active()
  * @method static Builder|SearchKey expired()
- *
  */
 class SearchKey extends Model
 {

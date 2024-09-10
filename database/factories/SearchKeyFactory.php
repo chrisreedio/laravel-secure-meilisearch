@@ -12,6 +12,7 @@ class SearchKeyFactory extends Factory
     public function definition(): array
     {
         $createdAt = $this->faker->dateTimeBetween('-10 minutes');
+
         return [
             'user_id' => 1,
             'uuid' => $this->faker->uuid,

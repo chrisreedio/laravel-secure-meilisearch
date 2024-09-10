@@ -3,7 +3,6 @@
 namespace ChrisReedIO\SecureMeilisearch;
 
 use ChrisReedIO\SecureMeilisearch\Commands\SecureMeilisearchCommand;
-use Closure;
 use Laravel\Scout\Console\FlushCommand;
 use Laravel\Scout\Console\ImportCommand;
 use Spatie\LaravelPackageTools\Package;
